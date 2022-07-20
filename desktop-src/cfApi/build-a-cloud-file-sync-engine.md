@@ -69,9 +69,9 @@ The following image demonstrates how the placeholder, full, and pinned full file
   * Cloud storage providers can register a shell copy hook for monitoring file operations within their sync root.
   * The provider registers their copy hook by setting the **CopyHook** registry value under their sync root registry key to a the CLSID of their COM local server object. This local server object implements the [IStorageProviderCopyHook](../shell/nn-shobjidl-istorageprovidercopyhook.md) interface.
 
-### Desktop Bridge
+### Manifest-based Registration
 
-* Sync engines using the cloud files APIs are designed to use the [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) as an implementation requirement.
+* Sync engines using the cloud files APIs are designed to use an AppX Manifest for registration, either via the [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) or via [Sparse Packaging](/windows/apps/desktop/modernize/grant-identity-to-nonpackaged-apps).
 
 ## Cloud Mirror sample
 
